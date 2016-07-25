@@ -69,7 +69,7 @@ Authenticates a user based on a RISC payload. Returns a trust score indicating t
 
 ### Examples
 
-**Request:** `curl -X POST -H "(headers)" "https://risc.lastwall.com/api/authenticate" -d '{"authreq":"(jsonvals_riscdata)"}'"`    
+**Request:** `curl -X POST -H "(headers)" "https://risc.lastwall.com/api/authenticate" -d '{"authreq":"{jsonvals_riscdata}"}'"`    
 
 **Response:** `HTTP/1.1 200 OK`    `{ "status": "OK" , "trust" : "HIGH" , "score" : "0.87538745"}`
 
