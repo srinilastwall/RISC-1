@@ -26,4 +26,4 @@ The Authorisation token shall be provided by email.
 
 ## URL for RISC Script
 
-The current URL for the RISC script is : 
+The current URL for the RISC script shall be provided by email.
