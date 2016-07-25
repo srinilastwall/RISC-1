@@ -6,15 +6,23 @@
 
 ## Add script to your login page
 
+The recommended mode of integration is via server-side calls to the API.The data collected can be sent to the API.
+This need not contain actual text used in authentication like 'password'.
 
-## Add API key
+## Server side integration
 
+Depending on your server-side stack - setup a module to connect to the LastWall API via SSL.
 
+### HTTP Basic Authentication
 
-## Add Authorisation Token
+Lastwall API calls using basic authentication must be sent with the following request header:    
 
+- **X-LW-Authorization** - a standard HTTP Basic Authentication header  
+- **X-LW-Token** - a standard HTTP Basic Authentication header    
 
+For more information on HTTP Basic Authentication, see [Basic Authenticaion](http://www.httpwatch.com/httpgallery/authentication/)
 
+This authentication is to be used in conjunction with HTTPS only.
 
 ## API Return Values
 
@@ -34,3 +42,11 @@ For all failed API calls (codes 400, 401, or 500), the result will be:
 `{ "status": "Error", "error": "(specific error message)" }`
 
 
+# ![Lastwall Logo](lw-logo.jpg) RISC API Calls
+
+Below are the API calls available for a standard RISC service.
+
+
+---------------------------------------
+
+## POST - /authenticate
