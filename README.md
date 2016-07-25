@@ -5,11 +5,15 @@ The LastWall Authentiation system provides a javascript embeddable in your appro
 
 ## Overview
 
-An embeddable javascript is provided. it needs to be initialied appripriately with the API key and Authorisation Token. The API url needs to be set appropriately based on whether, the usage is for testing , devlopment (sandbox) or production needs.
+An embeddable javascript is provided. it needs to be initialied appropriately with the API key and Authorisation Token. The API url needs to be set appropriately based on whether, the usage is for testing , development (sandbox) or production needs.
 
 ## Script Usage
 
+The script is placed in the webpage which has the login action. Ideally the data collected by the script, is collected by a server-side program and then a API call made from the server-side as part of the authentication workflow.
 
+## API usage
+
+See [Integration] (Integration.md) for details of accessing the API from a server-side module.
 
 ## API Key
 
