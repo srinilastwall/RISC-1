@@ -7,7 +7,7 @@ The minimal steps needed to integrate with the LastWall API are illustrated belo
 
 ## Add script to your login page
 
-The recommended mode of integration is via server-side calls to the API.The data collected by the script can be sent to the LastWall API via appropriate server side modules.
+The recommended mode of integration is via server-side calls to the API. The data collected by the script can be sent to the LastWall API via appropriate server side modules.
 
 
 ## Server side integration - Recommended
