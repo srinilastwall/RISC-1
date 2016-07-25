@@ -1,4 +1,5 @@
-#LastWall RISC 
+# ![Lastwall Logo](lw-logo.jpg) LastWall RISC 
+
 Last Wall Risk based Authentication
 
 ## Overview
