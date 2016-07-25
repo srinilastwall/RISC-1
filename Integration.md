@@ -3,7 +3,7 @@
 
 # Integration Steps
 
-The minimal steps needed to integrae with the LastWall API are illustrated below.
+The minimal steps needed to integrate with the LastWall API are illustrated below.
 
 ## Add script to your login page
 
@@ -51,3 +51,26 @@ Below are the API calls available for a standard RISC service.
 ---------------------------------------
 
 ## POST - /authenticate
+
+
+Authenticates a user based on a RISC payload. Returns a trust score indicating the level of RISK associated with the user.
+
+
+#### Required Parameters
+
+- **authreq** - JSON payload of data collected by "script"
+
+
+#### Return Values
+
+- **status** - String 'OK' or 'Error'. If it's an error, the specific message is included in the 'error' return value.
+- **error** - Undefined or specific error message.
+
+
+### Examples
+
+**Request:** `curl -X GET -H "(headers)" "https://risc.lastwall.com/api/authenticate" -d '{"authreq":"(jsonvals_riscdata)"}'"`    
+
+**Response:** `HTTP/1.1 200 OK`    `{ "status": "OK" , "trust" : "HIGH" , "score" : "0.87538745"}`
+
+---------------------------------------
