@@ -3,15 +3,16 @@
 
 # Integration Steps
 
+The minimal steps needed to integrae with the LastWall API are illustrated below.
 
 ## Add script to your login page
 
-The recommended mode of integration is via server-side calls to the API.The data collected can be sent to the API.
-This need not contain actual text used in authentication like 'password'.
+The recommended mode of integration is via server-side calls to the API.The data collected by the script can be sent to the LastWall API via appropriate server side modules.
 
-## Server side integration
 
-Depending on your server-side stack - setup a module to connect to the LastWall API via SSL.
+## Server side integration - Recommended
+
+Depending on your server-side stack - setup a module to connect to the LastWall API via HTTPS.
 
 ### HTTP Basic Authentication
 
@@ -20,9 +21,9 @@ Lastwall API calls using basic authentication must be sent with the following re
 - **X-LW-Authorization** - a standard HTTP Basic Authentication header  
 - **X-LW-Token** - a standard HTTP Basic Authentication header    
 
-For more information on HTTP Basic Authentication, see [Basic Authenticaion](http://www.httpwatch.com/httpgallery/authentication/)
+For more information on HTTP Basic Authentication, see [Basic Authentication](http://www.httpwatch.com/httpgallery/authentication/)
 
-This authentication is to be used in conjunction with HTTPS only.
+This mode of authentication is to be used in conjunction with HTTPS only.
 
 ## API Return Values
 
