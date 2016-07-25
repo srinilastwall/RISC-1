@@ -45,7 +45,7 @@ For all failed API calls (codes 400, 401, or 500), the result will be:
 
 # ![Lastwall Logo](lw-logo.jpg) RISC API Calls
 
-Below are the API calls available for a standard RISC service.
+The API call available for a standard RISC service.
 
 
 ---------------------------------------
